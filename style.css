@@ -49,7 +49,8 @@ body{
     background-color: #382742;
     text-decoration: underline;
   }
-  /* Container for all the three conversion calculator sections   */
+  
+/* Container for all the three conversion calculator sections   */
 #all-conversion-sections{
     display: grid;
     justify-content: center;
@@ -60,10 +61,10 @@ figure {
     justify-self: auto; 
     width:200px
 }
-
 img {
     width: 200px;
 }
+
 
 figcaption {
     color:black;
@@ -84,7 +85,24 @@ button{
 button:hover {
     cursor: pointer;
 }
-  /* The calculator panel */
+
+fieldset {
+    border: 2px solid;
+    border-radius: 10px;
+    margin: 40px;
+    padding: 10px;
+    background-color: rgb(240, 234, 245);
+}
+
+aside {
+    background-color: rgb(240, 234, 245);
+    margin: 39px;
+    padding: 3.5px;
+    border-radius: 5px;
+}
+
+
+/* The calculator panel */
 .b{
     border-top-style: solid;
     background-color: white;
@@ -113,4 +131,27 @@ button:hover {
 legend {
     font-size: 30px;
     font-weight: bolder;
+}
+
+/* Floating icon for the home button */
+.iconbutton{
+    width:40px;
+    height:40px;
+    border-radius: 100%;
+    background-color: rgb(225, 235, 235);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom:40px;
+    left:0;
+    }
+
+.iconbutton img {
+    width:30px
+}
+    
+footer {
+    background-color:rgb(240, 234, 245);
+    margin-top: 20px;
 }
