@@ -3,6 +3,7 @@
   <head>
       <title>Document</title>
       <link rel="stylesheet" href="style.css">
+      <script src="script.js"></script>
   </head>
   <body>
       <section id="home">
@@ -31,15 +32,13 @@
 
               <fieldset>
                 <legend>Temperature</legend>
-                <label for="Temperature">Celsius</label> <br/>
-                
- <input type="number" id="c"> <br/>
- <br/>
-                <button id="temperature"> Convert </button> <br/>
+                <label for="Temperature">Celsius</label> <br/>          
+                <input type="number" id="celsius"> <br/>
                 <br/>
-                <input type="number" id="f"> <br/>
-
- <label for="Temperature">Fahrenheit</label>
+                <button id="temperature" onclick="temperature()"> Convert </button> <br/>
+                <br/>
+                <input type="number" id="fahrenheit"> <br/>
+                <label for="Temperature">Fahrenheit</label>
               </fieldset>
               <br/>
               <br/>
@@ -62,15 +61,12 @@
               <fieldset>
                 <legend>Weight</legend>
                 <label for="Weight">KG</label> <br/>
-
- <input type="number"> <br/>
- <br/>
-                <button id="weight"> Convert </button>  <br/>
-
+                <input type="number" id="kilograms"> <br/>
                 <br/>
-                <input type="number">  <br/>
-
-  <label for="Weight">Pounds</label>    
+                <button id="weight" onclick="weight()"> Convert </button> <br/>
+                <br/>
+                <input type="number" id="pounds">  <br/>
+                <label for="Weight">Pounds</label>    
               </fieldset>
               <br/>
               <aside>
@@ -92,20 +88,17 @@
               <fieldset>
                 <legend>Distance</legend>
                   <label for="Distance">KM</label> <br/>
-
- <input type="number">  <br/>
- <br/>
-                  <button id="distance"> Convert </button> <br/>
+                  <input type="number" id="kilometers">  <br/>
                   <br/>
-                  <input type="number">  <br/>
-
-  <label for="Distance">Miles</label>
+                  <button id="distance" onclick="distance()"> Convert </button> <br/>
+                  <br/>
+                  <input type="number" id="miles">  <br/>
+                <label for="Distance">Miles</label>
               </fieldset>
               <br/>
               <aside>
                 To convert kilometers to miles yourself, use this formula replacing the `km` with your distance in kilmeters: km &divide; 1.609
               </aside>
-    
             </article>
           </div>
         </section>
